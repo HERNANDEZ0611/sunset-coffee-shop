@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-image: url(../img/Iconos/login.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.container-form {
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  transition:  all .5s ease-out;
+}
+
+.lo{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.mensaje {
+  padding: 1rem;
+}
+
+.mensaje h2 {
+  font-size: 1.7rem;
+  padding: 1rem 0;
+}
+
+.mensaje button {
+  padding: 1rem;
+  font-weight: 400;
+  background-color: brown;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: .9rem;
+  margin-top: 2rem;
+  transition: all .3s ease-in;
+  color: #fff;
+}
+
+.mensaje button:hover {
+  background-color: blue;
+}
+
+.formulario {
+  width: 400px;
+  padding: 1rem;
+  margin: 2rem;
+  background-color: rgba(94, 237, 179, 0.617);
+  text-align: center;
+}
+
+.create-account {
+  padding: 2.7rem 0;
+  font-size: 1.7rem;
+}
+
+.iconos {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.border-icon {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border: solid thin white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  transition: all .3s ease-in;
+  margin-bottom: 70px;
+}
+
+.border-icon:hover {
+  background-color: brown;
+  cursor: pointer;
+}
+
+.cuenta-gratis {
+  padding: 2rem 0;
+}
+
+.formulario input {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: white thin solid;
+  text-align: center;
+  outline: none;
+  padding: .2rem 0;
+  font-size: .9rem;
+  color: white;
+}
+
+.formulario button {
+  width: 60%;
+  margin: auto;
+  border: solid thin white;
+  padding: .7rem;
+  border-radius: 2rem;
+  background-color: white;
+  font-weight: 600;
+  margin-top: 3rem;
+  font-size: .8rem;
+  cursor: pointer;
+  color: #222;
+}
+
+.regis {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.regis.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.inicio.active {
+  opacity: 0;
+  visibility: hidden;
+}
